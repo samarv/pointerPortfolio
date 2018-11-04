@@ -1176,12 +1176,30 @@ input, select, textarea {
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		position: relative;
 		min-height: 100vh;
 		width: 100%;
 		padding: 4rem 2rem;
-		z-index: 3;
+		position: absolute;
+		z-index: 4;
 	}
+
+	#particles-js {
+		-moz-transform: scale(1.125);
+		-webkit-transform: scale(1.125);
+		-ms-transform: scale(1.125);
+		transform: scale(1.125);
+		-moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out;
+		-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
+		-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
+		transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		position: absolute;
+		width: 100vw;
+		height: 100vh;
+		z-index: 3;
+	} 
 
 		#wrapper:before {
 			content: '';
